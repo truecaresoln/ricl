@@ -1,0 +1,298 @@
+{
+ "creation": "2021-12-17 14:47:11.538339",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_section",
+  "customer_name",
+  "primary_address",
+  "email_id",
+  "column_break_6",
+  "site_address",
+  "website",
+  "gstin",
+  "basic_details_section",
+  "number_of_employees",
+  "number_of_temporary_sites",
+  "column_break_12",
+  "number_of_shifts",
+  "number_of_temporary_employees",
+  "contacts_section",
+  "director",
+  "mobile",
+  "column_break_18",
+  "contact_person",
+  "person_mobile",
+  "certificate_details_section",
+  "certificate_category",
+  "accreditation",
+  "column_break_24",
+  "certificate",
+  "detailed_scope_and_product_details_section",
+  "scope",
+  "design_applicable",
+  "initial_certification_fee_section",
+  "application_fees",
+  "first_surveillance_fees",
+  "column_break_32",
+  "payment_on_audit",
+  "second_surveillance_fees",
+  "application_fee_details_section",
+  "total_amount",
+  "in_favor_of",
+  "column_break_38",
+  "cheque_number",
+  "bank_name",
+  "notes_section",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_section",
+   "fieldtype": "Section Break",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer_name.primary_address",
+   "fieldname": "primary_address",
+   "fieldtype": "Data",
+   "label": "Primary Address"
+  },
+  {
+   "fetch_from": "gstin.email_id",
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID"
+  },
+  {
+   "fieldname": "gstin",
+   "fieldtype": "Link",
+   "label": "GST Number",
+   "options": "Address"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_address",
+   "fieldtype": "Data",
+   "label": "Site Address"
+  },
+  {
+   "fetch_from": "customer_name.website",
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "number_of_employees",
+   "fieldtype": "Int",
+   "label": "Number of Employees"
+  },
+  {
+   "fieldname": "number_of_temporary_sites",
+   "fieldtype": "Int",
+   "label": "Number of Temporary Sites"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number_of_shifts",
+   "fieldtype": "Int",
+   "label": "Number of Shifts"
+  },
+  {
+   "fieldname": "number_of_temporary_employees",
+   "fieldtype": "Int",
+   "label": "Number of Temporary Employees"
+  },
+  {
+   "fieldname": "contacts_section",
+   "fieldtype": "Section Break",
+   "label": "Contacts"
+  },
+  {
+   "fieldname": "director",
+   "fieldtype": "Data",
+   "label": "Director"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Link",
+   "label": "Contact Person",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "person_mobile",
+   "fieldtype": "Data",
+   "label": "Person Mobile"
+  },
+  {
+   "fieldname": "certificate_details_section",
+   "fieldtype": "Section Break",
+   "label": "Certificate Details"
+  },
+  {
+   "fieldname": "certificate_category",
+   "fieldtype": "Link",
+   "label": "Certificate Category",
+   "options": "Certificate Category"
+  },
+  {
+   "fieldname": "accreditation",
+   "fieldtype": "Data",
+   "label": "Accreditation"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "certificate",
+   "fieldtype": "Link",
+   "label": "Certificate",
+   "options": "Certificates"
+  },
+  {
+   "fieldname": "detailed_scope_and_product_details_section",
+   "fieldtype": "Section Break",
+   "label": "Detailed Scope and Product Details"
+  },
+  {
+   "fieldname": "scope",
+   "fieldtype": "Long Text",
+   "label": "Scope"
+  },
+  {
+   "fieldname": "design_applicable",
+   "fieldtype": "Data",
+   "label": "Design Applicable"
+  },
+  {
+   "fieldname": "initial_certification_fee_section",
+   "fieldtype": "Section Break",
+   "label": "Initial Certification Fee"
+  },
+  {
+   "fieldname": "application_fees",
+   "fieldtype": "Float",
+   "label": "Application Fees"
+  },
+  {
+   "fieldname": "first_surveillance_fees",
+   "fieldtype": "Float",
+   "label": "First Surveillance Fees"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_on_audit",
+   "fieldtype": "Float",
+   "label": "Payment on Audit"
+  },
+  {
+   "fieldname": "second_surveillance_fees",
+   "fieldtype": "Float",
+   "label": "Second Surveillance Fees"
+  },
+  {
+   "fieldname": "application_fee_details_section",
+   "fieldtype": "Section Break",
+   "label": "Application Fee Details"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "in_favor_of",
+   "fieldtype": "Data",
+   "label": "In Favor of"
+  },
+  {
+   "fieldname": "cheque_number",
+   "fieldtype": "Data",
+   "label": "Cheque Number"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Long Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Customer Information Form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_38",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-12-18 10:49:54.043439",
+ "modified_by": "Administrator",
+ "module": "Royal Impact Certificate Ltd",
+ "name": "Customer Information Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,62 @@
+{
+ "creation": "2021-12-11 14:44:43.491792",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "follow_up_date",
+  "description",
+  "next_follow_up_by",
+  "next_follow_date",
+  "next_follow_up_by_name"
+ ],
+ "fields": [
+  {
+   "allow_on_submit": 1,
+   "default": "Today",
+   "fieldname": "follow_up_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Follow Up Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "next_follow_up_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Next Follow Up By",
+   "options": "User"
+  },
+  {
+   "fetch_from": "next_follow_up_by.full_name",
+   "fieldname": "next_follow_up_by_name",
+   "fieldtype": "Data",
+   "label": "Next Follow Up By Name"
+  },
+  {
+   "fieldname": "next_follow_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Next Follow Date"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-12-11 15:04:53.989085",
+ "modified_by": "Administrator",
+ "module": "Royal Impact Certificate Ltd",
+ "name": "Lead Follow Up",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

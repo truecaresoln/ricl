@@ -1,0 +1,186 @@
+{
+ "autoname": "field:lead",
+ "creation": "2021-12-10 12:04:42.497067",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lead",
+  "lead_owner",
+  "column_break_3",
+  "owner",
+  "status",
+  "customer_detail_section",
+  "lead_name",
+  "department",
+  "designation",
+  "email_id",
+  "column_break_9",
+  "contact_number",
+  "customer_address",
+  "service_detail_section",
+  "certificate_category",
+  "column_break_13",
+  "certificate",
+  "section_break_16",
+  "notes",
+  "follow_ups_section",
+  "follow_ups",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "lead",
+   "fieldtype": "Link",
+   "label": "Lead",
+   "options": "Lead",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Link",
+   "label": "Allocated To",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lead_owner",
+   "fieldtype": "Link",
+   "label": "Allocated By",
+   "options": "User"
+  },
+  {
+   "fieldname": "customer_address",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Detail"
+  },
+  {
+   "fieldname": "lead_name",
+   "fieldtype": "Data",
+   "label": "Person Name"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "service_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Service Detail"
+  },
+  {
+   "fieldname": "certificate_category",
+   "fieldtype": "Link",
+   "label": "Certificate Category",
+   "options": "Certificate Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "certificate",
+   "fieldtype": "Link",
+   "label": "Certificate",
+   "options": "Certificates"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "follow_ups_section",
+   "fieldtype": "Section Break",
+   "label": "Follow Ups"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "follow_ups",
+   "fieldtype": "Table",
+   "label": "Follow Ups",
+   "options": "Lead Follow Up"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "\nOpen\nClose\nDecline",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Lead Alignment",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Lead Brief",
+   "reqd": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-12-11 15:29:58.769451",
+ "modified_by": "Administrator",
+ "module": "Royal Impact Certificate Ltd",
+ "name": "Lead Alignment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
